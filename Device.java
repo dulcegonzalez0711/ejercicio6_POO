@@ -1,7 +1,6 @@
 /******************************************************************
 Device.java
 Autora: Dulce González
-Clase abstracta que implemente 
 ******************************************************************/
 import java.util.Date;
 

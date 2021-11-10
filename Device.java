@@ -4,13 +4,21 @@ Autora: Dulce González
 ******************************************************************/
 import java.util.Date;
 
-abstract class Device {
+public class Device {
     protected double price;
 	protected String serialNumber;
 	protected String manufacturer;
-	protected Date productionDate;
+	protected String productionDate;
 	protected String markerAR;
 	protected String deviceType;
+        
+        public Device(String serialNumber, String manufacturer, String productionDate, String markerAR, String deviceType ){
+            this.serialNumber = serialNumber;
+            this.manufacturer = manufacturer;
+            this.productionDate = productionDate;
+            this.markerAR = markerAR;
+            this.deviceType = deviceType;
+        }
 
 	 public double getPrecio(){
 		return this.price;
@@ -18,7 +26,7 @@ abstract class Device {
 	 public String getSN(){
 		return this.serialNumber;
 	 }
-	 public void setProductionDate(Date productionDate) {
+	 public void setProductionDate(String productionDate) {
 		this.productionDate = productionDate;
 	}
 	
@@ -51,6 +59,10 @@ abstract class Device {
 	public String getManufacturer() {
 		return this.manufacturer;
 	}
+        
+       public void Funcionalidades(){
+           
+       }
 
 
 }
